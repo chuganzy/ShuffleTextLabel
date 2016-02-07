@@ -5,6 +5,13 @@
 
 ## Installation
 
+### CocoaPods
+
+```
+use_frameworks!
+pod StringTransformKit
+```
+
 ### Carthage
 
 ```
