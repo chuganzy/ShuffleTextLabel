@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-LU-Nkq">
+                                <rect key="frame" x="20" y="283.5" width="560" height="33.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-lO-35j" customClass="ShuffleTextLabel" customModule="ShuffleTextLabel">
+                                        <rect key="frame" x="0.0" y="21.5" width="560" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgp-7a-Rgf" customClass="ShuffleTextLabel" customModule="ShuffleTextLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Fgp-7a-Rgf" firstAttribute="leading" secondItem="oUR-LU-Nkq" secondAttribute="leading" id="BTU-V2-f3z"/>
+                                    <constraint firstAttribute="trailing" secondItem="m4B-lO-35j" secondAttribute="trailing" id="GeT-dx-z50"/>
+                                    <constraint firstItem="m4B-lO-35j" firstAttribute="top" secondItem="Fgp-7a-Rgf" secondAttribute="bottom" id="MEN-9e-rEC"/>
+                                    <constraint firstAttribute="bottom" secondItem="m4B-lO-35j" secondAttribute="bottom" id="a84-UX-LZf"/>
+                                    <constraint firstItem="Fgp-7a-Rgf" firstAttribute="top" secondItem="oUR-LU-Nkq" secondAttribute="top" id="ccI-xC-4zO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fgp-7a-Rgf" secondAttribute="trailing" id="hMd-1o-f5C"/>
+                                    <constraint firstItem="m4B-lO-35j" firstAttribute="leading" secondItem="oUR-LU-Nkq" secondAttribute="leading" id="jth-WW-ZQ5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oUR-LU-Nkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="4Mi-My-tzS"/>
+                            <constraint firstItem="oUR-LU-Nkq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Acl-UL-iuR"/>
+                            <constraint firstAttribute="trailing" secondItem="oUR-LU-Nkq" secondAttribute="trailing" constant="20" id="lwp-8x-CU8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="Fgp-7a-Rgf" id="I9b-c0-VQD"/>
+                        <outlet property="label2" destination="m4B-lO-35j" id="Ddq-gT-lMu"/>
+                    </connections>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+</document>
