@@ -36,11 +36,11 @@ public class ShuffleTextLabel: UILabel {
             return
         }
         let time = link.timestamp - beginTime
-        if self.shuffleInterval * CFTimeInterval(text.characters.count + 1) < time && self.text == self.shuffleText {
-            self.invalidateShuffleText()
-            return
-        }
         let finishedIndex = Int(floor(time / self.shuffleInterval))
+        if text.characters.count <= finishedIndex {
+            self.invalidateShuffleText()
+        }
+        
         self.text = text.characters.enumerate().reduce("") { (current, pair) -> String in
             let index = pair.0
             let char = pair.1
