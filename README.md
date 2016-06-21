@@ -9,7 +9,7 @@
 
 ```
 use_frameworks!
-pod 'StringTransformKit'
+pod 'ShuffleTextLabel'
 ```
 
 ### Carthage
