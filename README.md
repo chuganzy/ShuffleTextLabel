@@ -15,5 +15,5 @@ pod 'ShuffleTextLabel'
 ### Carthage
 
 ```
-github "hoppenichu/ShuffleTextLabel"
+github "chuganzy/ShuffleTextLabel"
 ```
