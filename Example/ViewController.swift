@@ -17,26 +17,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         [self.label1, self.label2].forEach {
-            $0.shuffleCharactors = "abcdefghijklmnopqrstuvwxyz".uppercaseString.characters
+            $0!.shuffleCharactors = "abcdefghijklmnopqrstuvwxyz".uppercased()
         }
         self.label1.shuffleInterval = 0.014
         self.label2.shuffleTextLength = 2
         self.label2.shuffleInterval = 0.008
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.beginShuffleAnimation()
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesBegan(touches, withEvent: event)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         self.beginShuffleAnimation()
     }
     
     private func beginShuffleAnimation() {
-        self.label1.beginShuffleText("SHUFFLETEXTLABEL")
-        self.label2.beginShuffleText("CREATED BY HOPPENICHU / INSPIRED BY THA LTD")
+        self.label1.beginShuffleText(text: "SHUFFLETEXTLABEL")
+        self.label2.beginShuffleText(text: "CREATED BY HOPPENICHU / INSPIRED BY THA LTD")
     }
 }
 
